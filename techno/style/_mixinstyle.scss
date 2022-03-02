@@ -1,0 +1,111 @@
+$color1:#c8e8e0;
+$color2:#fff2e4;
+$borderr:20px;
+@mixin fontsize($fz,$fw,$col){
+   font-size: $fz;
+   font-weight: $fw;
+   color: $col;
+}
+%container{
+   max-width: 100%;
+}
+%maxwidth1140{
+   max-width: 1140px;
+   margin: 0 auto;
+   @media (max-width:916px){
+      max-width: 767px;
+      .block3-column{
+         flex: 0 1 50%;
+      }
+      .block1__subtitle{
+         font-size: 32px;
+      }
+      .text-container{
+         margin-top: 80px;
+      }
+      .iconblock{
+         flex: 0 1 50%;
+      }
+      .block4-column__text{
+         font-size: 28px;
+      }
+      .block5__text{
+         font-size: 24px;
+      }
+      .block5__img{
+         width: 180px;
+         height: 180px;
+      }
+      .block7__container3{
+         flex: 0 1 100%;
+      }
+      .block7__container2{
+         flex: 0 1 50%;
+         padding: 30px;
+      }
+      .block7__container1{
+         flex: 0 1 50%;
+         padding: 30px;
+      }
+      .input{
+         max-width: 60%;
+         margin: 0 auto 10px;
+      }
+   }
+   @media (max-width:690px){
+      .block1__subtitle{
+         font-size: 24px;
+      }
+      .title{
+         font-size: 32px;
+      }
+      .block5__column1{
+         flex: 0 0 100%;  
+      }
+      .block5__column2{
+         flex: 0 0 100%;  
+      }
+   }
+   @media (max-width:600px){
+      .block4__container{
+         flex: 0 1 100%;
+      }
+      .iconblock{
+         flex: 0 1 100%;
+      }
+      .block1__column{
+         flex: 0 1 100%;
+      }
+      .block3__title{
+         font-size: 32px;
+      }
+      .block3-column{
+         flex: 0 1 100%;
+      }
+      .block2__up{
+         padding: 20px;
+      }
+      .block7__container1{
+         flex: 0 1 100%;
+      }
+      .block7__container2{
+         flex: 0 1 100%;
+      }
+      .input{
+         max-width: 85%;
+         margin: 0 auto 10px;
+      }
+   }
+}
+%maxwidth976{
+   max-width: 976px;
+   margin: 0 auto;
+   @media (max-width:690px){
+      .applogo{
+         padding: 10px 30px;
+      }
+      .block6__title{
+         font-size: 28px;
+      }
+   }
+}
